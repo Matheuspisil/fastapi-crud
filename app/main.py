@@ -1,10 +1,16 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from . import models, crud, database
+from app.database import get_db
+
 
 app = FastAPI()
 
 models.Base.metadata.create_all(bind=database.engine)
+
+@app.get("/")
+def read_root():
+    return {"message": "Desafio Fastapi JabutiAGI"}
 
 @app.get("/usuarios/")
 def read_users(skip: int = 0, limit: int = 10, db: Session = Depends(database.get_db)):
