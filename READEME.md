@@ -1,6 +1,6 @@
 # Aplicação FastAPI CRUD
 
-Este projeto é uma aplicação FastAPI com operações básicas de CRUD (Criar, Ler, Atualizar, Deletar) integradas ao PostgreSQL usando SQLAlchemy. A aplicação é containerizada usando Docker, o que facilita a configuração e implantação.
+Este projeto é uma aplicação FastAPI com operações de CRUD (Criar, Ler, Atualizar, Deletar) integradas ao PostgreSQL usando SQLAlchemy. A aplicação é containerizada usando Docker, para configuração e implantação.
 
 ## Índice
 
@@ -19,7 +19,7 @@ Este projeto é uma aplicação FastAPI com operações básicas de CRUD (Criar,
 
 ## Visão Geral
 
-Este projeto demonstra o uso de FastAPI com PostgreSQL para gerenciar dados de usuários através de uma API RESTful. A aplicação é totalmente containerizada usando Docker e Docker Compose, permitindo fácil desenvolvimento e implantação.
+Este projeto demonstra o uso de FastAPI com PostgreSQL para gerenciar dados de usuários através de uma API RESTful. A aplicação é totalmente containerizada usando Docker/Docker Compose, permitindo fácil desenvolvimento e implantação.
 
 ## Funcionalidades
 
@@ -33,9 +33,9 @@ Este projeto demonstra o uso de FastAPI com PostgreSQL para gerenciar dados de u
 
 Antes de começar, certifique-se de ter atendido aos seguintes requisitos:
 
-- **Docker** (versão 24.x ou posterior)
-- **Docker Compose** (versão 1.29.x ou posterior)
-- **Python** (versão 3.9 ou posterior)
+- **Docker** (versão 24.x ou acima)
+- **Docker Compose** (versão 1.29.x ou acima)
+- **Python** (versão 3.9 ou acima)
 
 ## Instalação
 
@@ -63,8 +63,7 @@ http://localhost:8000/
 
 ### Interagindo com a API
 
-Após a execução da aplicação, você pode interagir com a API usando `curl`, Postman ou diretamente pelo navegador.
-
+Após a execução da aplicação, você pode interagir com a API usando 'curl', Postman ou diretamente pelo navegador '/docs/'.
 ### Exemplos de Requisições
 
 **Criar um usuário:**
@@ -138,8 +137,6 @@ Para rodar os testes unitários, use o seguinte comando:
 
 comando> pytest
 
----
-
 ## Contribuindo
 
 Contribuições são bem-vindas! Siga os seguintes passos para contribuir:
@@ -162,7 +159,7 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICEN
 
 Para mais informações, entre em contato:
 
-- **Mantenedor do Projeto**: [Seu Nome](https://github.com/seuusuario)
+- **Mantenedor do Projeto**: [Matheus Pires](https://github.com/Matheuspisil)
 
 ---
 
@@ -171,6 +168,8 @@ Para mais informações, entre em contato:
 - Documentação do FastAPI: [https://fastapi.tiangolo.com/](https://fastapi.tiangolo.com/)
 - Documentação do Docker: [https://docs.docker.com/](https://docs.docker.com/)
 - Documentação do PostgreSQL: [https://www.postgresql.org/docs/](https://www.postgresql.org/docs/)
+
+
 
 
 

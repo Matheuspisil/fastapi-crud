@@ -31,3 +31,6 @@ def delete_user(db: Session, user_id: int):
         db.commit()
         return True
     return False
+
+
+

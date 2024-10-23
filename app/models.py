@@ -8,3 +8,4 @@ class User(Base):
     nome = Column(String, index=True)
     email = Column(String, unique=True, index=True)
     idade = Column(Integer)
+    
