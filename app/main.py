@@ -26,8 +26,9 @@ def read_user(user_id: int, db: Session = Depends(database.get_db)):
 
 @app.post("/usuarios/")
 def create_user(nome: str, email: str, idade: int, db: Session = Depends(database.get_db)):
-    user = models.User(nome=nome, email=email, idade=idade)
-    return crud.create_user(db, user)
+    new_user = models.User(nome=nome, email=email, idade=idade)
+    user = crud.create_user(db, new_user)
+    return user
 
 @app.put("/usuarios/{user_id}")
 def update_user(user_id: int, nome: str, email: str, idade: int, db: Session = Depends(database.get_db)):
