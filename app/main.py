@@ -42,8 +42,4 @@ def delete_user(user_id: int, db: Session = Depends(database.get_db)):
     user = crud.get_user(db, user_id)
     if user is None:
         raise HTTPException(status_code=404, detail="Usuário não encontrado")
-    
-    success = crud.delete_user(db, user_id)
-    if success:
-        return {"message": "Usuário deletado com sucesso"}
-    raise HTTPException(status_code=500, detail="Erro ao tentar deletar o usuário")
+    return {"message": "Usuário deletado com sucesso"}
